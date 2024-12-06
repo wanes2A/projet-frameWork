@@ -706,3 +706,53 @@ section{
    }
 
 }
+@media (max-width: 768px) {
+   .navbar {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      background: #fff;
+      position: absolute;
+      top: 70px; /* Adjust based on your header height */
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+   }
+
+   .navbar.active {
+      display: flex;
+   }
+
+   .navbar a {
+      font-size: 16px;
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+   }
+
+   #menu-btn {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+   }
+
+   .swiper-slide {
+      background-size: cover;
+      background-position: center;
+   }
+
+   .box-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
+
+   .footer .box-container {
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+}
